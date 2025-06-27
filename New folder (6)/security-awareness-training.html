@@ -10,10 +10,27 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
+            line-height: 1.6; /* Consistent line height */
+        }
+        nav ul li a {
+            padding: 0.5rem 0.75rem;
+            border-radius: 0.375rem; /* rounded-md */
+            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+        nav ul li a:hover {
+            background-color: #EBF8FF; /* bg-blue-50 for light mode */
+            color: #2B6CB0; /* text-blue-700 for light mode */
+        }
+        .dark nav ul li a:hover {
+            background-color: #2D3748; /* dark:bg-gray-700 */
+            color: #63B3ED; /* dark:text-blue-300 */
         }
         .active-link {
-            border-bottom: 2px solid #3B82F6;
-            color: #3B82F6;
+            color: #2563EB; /* Tailwind's blue-600 */
+            font-weight: 600; /* semibold */
+        }
+        .dark .active-link {
+            color: #90CDF4; /* Tailwind's blue-300 */
         }
         .section {
             margin-bottom: 8rem;
@@ -45,89 +62,95 @@
         </nav>
     </header>
     <main class="container mx-auto px-4 py-8">
-        <section class="security-awareness-training space-y-16">
+        <section class="service-detail space-y-16">
             <div class="text-center section">
                 <h1 class="text-4xl font-semibold">Security Awareness Training</h1>
-                <p class="text-gray-600 dark:text-gray-400 mt-4">Protect your organization with our comprehensive security awareness training.</p>
+                <p class="text-gray-600 dark:text-gray-400 mt-4">Empowering your employees to be the first line of defense against cyber threats.</p>
             </div>
+
+            <!-- What is Security Awareness Training? -->
             <div class="section flex items-center">
                 <div class="w-1/2">
-                    <i class="fas fa-user-shield icon text-purple-500"></i>
+                    <i class="fas fa-user-graduate icon text-blue-500"></i>
                     <h2 class="text-3xl font-semibold">What is Security Awareness Training?</h2>
-                    <p class="text-gray-600 dark:text-gray-400 mt-4">Security awareness training is a program designed to educate employees about the importance of cybersecurity and how to recognize and prevent cyber threats. It helps to build a culture of security within the organization, ensuring that all employees are aware of their role in protecting sensitive data.</p>
+                    <p class="text-gray-600 dark:text-gray-400 mt-4">Security awareness training educates employees about cybersecurity threats and best practices to protect sensitive information. It aims to cultivate a security-conscious culture where employees understand their role in preventing breaches.</p>
                 </div>
                 <div class="w-1/2">
-                    <img src="path/to/your/security-awareness.jpg" alt="Security Awareness Training" class="rounded-lg shadow-md">
-                </div>
-            </div>
-            <div class="section flex items-center">
-                <div class="w-1/2">
-                    <img src="path/to/your/importance.jpg" alt="Importance of Security Awareness Training" class="rounded-lg shadow-md">
-                </div>
-                <div class="w-1/2">
-                    <i class="fas fa-shield-alt icon text-blue-500"></i>
-                    <h2 class="text-3xl font-semibold">Why is Security Awareness Training Important?</h2>
-                    <p class="text-gray-600 dark:text-gray-400 mt-4">Security awareness training is crucial for protecting an organization from cyber threats. It helps employees to understand the risks associated with cyber attacks, recognize potential threats, and take appropriate actions to prevent data breaches. Effective security awareness training can significantly reduce the risk of cyber incidents.</p>
+                    <img src="3657405.jpg" alt="Security Awareness Training" loading="lazy" class="rounded-lg shadow-md">
                 </div>
             </div>
+
+            <!-- Importance of Security Awareness Training -->
             <div class="section flex items-center">
                 <div class="w-1/2">
-                    <i class="fas fa-list-alt icon text-green-500"></i>
-                    <h2 class="text-3xl font-semibold">Our Security Awareness Training Services</h2>
-                    <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 mt-4">
-                        <li>Interactive Training Sessions</li>
-                        <li>Phishing Simulations</li>
-                        <li>Cybersecurity Awareness Campaigns</li>
-                        <li>Policy and Procedure Training</li>
-                        <li>Continuous Education and Support</li>
-                    </ul>
+                    <img src="7903569.jpg" alt="Importance of Security Awareness Training" loading="lazy" class="rounded-lg shadow-md">
                 </div>
                 <div class="w-1/2">
-                    <img src="path/to/your/services.jpg" alt="Security Awareness Training Services" class="rounded-lg shadow-md">
+                    <i class="fas fa-users-shield icon text-green-500"></i>
+                    <h2 class="text-3xl font-semibold">Importance of Security Awareness Training</h2>
+                    <p class="text-gray-600 dark:text-gray-400 mt-4">Human error is a leading cause of data breaches. Effective security awareness training significantly reduces the risk of incidents caused by phishing, social engineering, weak passwords, and mishandling of sensitive data, making employees a vital part of your defense strategy.</p>
                 </div>
             </div>
+
+            <!-- Our Security Awareness Training Services -->
+            <div class="section">
+                <h2 class="text-3xl font-semibold text-center">Our Security Awareness Training Programs</h2>
+                <div class="flex items-center mt-8">
+                    <div class="w-1/2">
+                        <img src="close-up-programmer-typing-keyboard_23-2149101203.jpg" alt="Security Awareness Training Services" loading="lazy" class="rounded-lg shadow-md">
+                    </div>
+                    <div class="w-1/2 pl-8">
+                        <p class="text-gray-600 dark:text-gray-400">We offer engaging and customized training programs, including:</p>
+                        <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 mt-4">
+                            <li>Interactive Online Modules</li>
+                            <li>Phishing Simulation Exercises</li>
+                            <li>In-Person Workshops and Seminars</li>
+                            <li>Role-Specific Training</li>
+                            <li>Regular Security Updates and Newsletters</li>
+                            <li>Gamified Learning Experiences</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Our Approach -->
             <div class="section flex items-center">
                 <div class="w-1/2">
-                    <img src="path/to/your/approach.jpg" alt="Our Approach" class="rounded-lg shadow-md">
-                </div>
-                <div class="w-1/2">
-                    <i class="fas fa-cogs icon text-yellow-500"></i>
+                    <i class="fas fa-chalkboard-teacher icon text-yellow-500"></i>
                     <h2 class="text-3xl font-semibold">Our Approach</h2>
-                    <p class="text-gray-600 dark:text-gray-400 mt-4">Our security awareness training approach involves a comprehensive methodology that includes:</p>
-                    <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 mt-4">
-                        <li>Initial Assessment and Planning</li>
-                        <li>Customized Training Programs</li>
-                        <li>Interactive Learning Sessions</li>
-                        <li>Continuous Monitoring and Evaluation</li>
-                        <li>Ongoing Support and Updates</li>
-                    </ul>
+                    <p class="text-gray-600 dark:text-gray-400 mt-4">Our training programs are designed to be practical, relevant, and memorable. We focus on real-world scenarios and actionable advice that employees can apply daily. We track progress and provide metrics to demonstrate effectiveness.</p>
+                </div>
+                <div class="w-1/2">
+                    <img src="image.png" alt="Our Approach" loading="lazy" class="rounded-lg shadow-md">
                 </div>
             </div>
-            <div class="section flex items-center">
-                <div class="w-1/2">
-                    <i class="fas fa-check-circle icon text-purple-500"></i>
-                    <h2 class="text-3xl font-semibold">Benefits of Our Security Awareness Training</h2>
-                    <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 mt-4">
-                        <li>Enhance overall security posture</li>
-                        <li>Reduce the risk of cyber incidents</li>
-                        <li>Build a culture of security</li>
-                        <li>Ensure compliance with regulatory requirements</li>
-                        <li>Protect sensitive data and intellectual property</li>
-                    </ul>
-                </div>
-                <div class="w-1/2">
-                    <img src="path/to/your/benefits.jpg" alt="Benefits of Security Awareness Training" class="rounded-lg shadow-md">
+
+            <!-- Benefits of Our Security Awareness Training -->
+            <div class="section">
+                <h2 class="text-3xl font-semibold text-center">Benefits of Our Security Awareness Training</h2>
+                <div class="flex items-center mt-8">
+                    <div class="w-1/2">
+                        <img src="3657405.jpg" alt="Benefits of Security Awareness Training" loading="lazy" class="rounded-lg shadow-md">
+                    </div>
+                    <div class="w-1/2 pl-8">
+                        <ul class="list-disc list-inside text-gray-600 dark:text-gray-400">
+                            <li><strong>Reduced Human Error:</strong> Lower the risk of employee-induced breaches.</li>
+                            <li><strong>Stronger Security Culture:</strong> Foster a proactive security mindset across the organization.</li>
+                            <li><strong>Improved Threat Recognition:</strong> Help employees identify and report suspicious activities.</li>
+                            <li><strong>Compliance Fulfillment:</strong> Meet regulatory training requirements.</li>
+                            <li><strong>Enhanced Data Protection:</strong> Better safeguarding of sensitive information.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="section flex items-center">
-                <div class="w-1/2">
-                    <img src="path/to/your/call-to-action.jpg" alt="Call to Action" class="rounded-lg shadow-md">
-                </div>
-                <div class="w-1/2">
-                    <i class="fas fa-phone-alt icon text-blue-500"></i>
-                    <h2 class="text-3xl font-semibold">Call to Action</h2>
-                    <p class="text-gray-600 dark:text-gray-400 mt-4">Ready to enhance your organization's security with our security awareness training? Contact us today to schedule a consultation and learn more about how we can support your security initiatives.</p>
-                    <a href="contact.html" class="bg-gradient-to-r from-blue-500 to-purple-500 text-white p-2 rounded-md hover:from-blue-600 hover:to-purple-600 inline-block mt-4">Contact Us</a>
+
+            <!-- Call to Action -->
+            <div class="section text-center">
+                <h2 class="text-3xl font-semibold">Empower Your Employees Today</h2>
+                <p class="text-gray-600 dark:text-gray-400 mt-4">Invest in your human firewall. Contact us to learn more about our security awareness training programs.</p>
+                <a href="contact.html" class="bg-blue-500 text-white p-3 rounded-md hover:bg-blue-600 mt-6 inline-block">Get Started</a>
+                <div class="mt-8">
+                    <img src="7903569.jpg" alt="Call to Action" loading="lazy" class="rounded-lg shadow-md inline-block">
                 </div>
             </div>
         </section>

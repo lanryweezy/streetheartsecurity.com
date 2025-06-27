@@ -10,10 +10,27 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
+            line-height: 1.6; /* Consistent line height */
+        }
+        nav ul li a {
+            padding: 0.5rem 0.75rem;
+            border-radius: 0.375rem; /* rounded-md */
+            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+        nav ul li a:hover {
+            background-color: #EBF8FF; /* bg-blue-50 for light mode */
+            color: #2B6CB0; /* text-blue-700 for light mode */
+        }
+        .dark nav ul li a:hover {
+            background-color: #2D3748; /* dark:bg-gray-700 */
+            color: #63B3ED; /* dark:text-blue-300 */
         }
         .active-link {
-            border-bottom: 2px solid #3B82F6;
-            color: #3B82F6;
+            color: #2563EB; /* Tailwind's blue-600 */
+            font-weight: 600; /* semibold */
+        }
+        .dark .active-link {
+            color: #90CDF4; /* Tailwind's blue-300 */
         }
         .section {
             margin-bottom: 8rem;
@@ -45,91 +62,95 @@
         </nav>
     </header>
     <main class="container mx-auto px-4 py-8">
-        <section class="penetration-testing space-y-16">
+        <section class="service-detail space-y-16">
             <div class="text-center section">
                 <h1 class="text-4xl font-semibold">Penetration Testing</h1>
-                <p class="text-gray-600 dark:text-gray-400 mt-4">Protect your systems and data with our comprehensive penetration testing services.</p>
+                <p class="text-gray-600 dark:text-gray-400 mt-4">Simulating real-world attacks to uncover vulnerabilities before attackers do.</p>
             </div>
+
+            <!-- What is Penetration Testing? -->
             <div class="section flex items-center">
                 <div class="w-1/2">
-                    <i class="fas fa-shield-alt icon text-blue-500"></i>
+                    <i class="fas fa-user-secret icon text-blue-500"></i>
                     <h2 class="text-3xl font-semibold">What is Penetration Testing?</h2>
-                    <p class="text-gray-600 dark:text-gray-400 mt-4">Penetration testing, also known as pen testing or ethical hacking, is a simulated cyber attack against your computer system to check for exploitable vulnerabilities. In the context of web application security, penetration testing is commonly used to augment a web application firewall (WAF).</p>
+                    <p class="text-gray-600 dark:text-gray-400 mt-4">Penetration testing, often called ethical hacking, is an authorized simulated cyberattack on a computer system, network, or web application to evaluate its security. Testers use the same tools and techniques as malicious attackers to identify and exploit vulnerabilities.</p>
                 </div>
                 <div class="w-1/2">
-                    <img src="close-up-programmer-typing-keyboard_23-2149101203.jpg" alt="Penetration Testing" class="rounded-lg shadow-md">
-                </div>
-            </div>
-            <div class="section flex items-center">
-                <div class="w-1/2">
-                    <img src="path/to/your/importance.jpg" alt="Importance of Penetration Testing" class="rounded-lg shadow-md">
-                </div>
-                <div class="w-1/2">
-                    <i class="fas fa-exclamation-triangle icon text-red-500"></i>
-                    <h2 class="text-3xl font-semibold">Why is Penetration Testing Important?</h2>
-                    <p class="text-gray-600 dark:text-gray-400 mt-4">Penetration testing is crucial for identifying and addressing security weaknesses in your systems and networks. By simulating real-world attacks, organizations can proactively identify vulnerabilities before malicious actors can exploit them. This helps in preventing data breaches, financial loss, and reputational damage.</p>
+                    <img src="3657405.jpg" alt="Penetration Testing" loading="lazy" class="rounded-lg shadow-md">
                 </div>
             </div>
+
+            <!-- Importance of Penetration Testing -->
             <div class="section flex items-center">
                 <div class="w-1/2">
-                    <i class="fas fa-list-alt icon text-green-500"></i>
-                    <h2 class="text-3xl font-semibold">Our Penetration Testing Services</h2>
-                    <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 mt-4">
-                        <li>Network Penetration Testing</li>
-                        <li>Web Application Penetration Testing</li>
-                        <li>Mobile Application Penetration Testing</li>
-                        <li>Cloud Penetration Testing</li>
-                        <li>Social Engineering Testing</li>
-                        <li>Wireless Network Penetration Testing</li>
-                    </ul>
+                    <img src="7903569.jpg" alt="Importance of Penetration Testing" loading="lazy" class="rounded-lg shadow-md">
                 </div>
                 <div class="w-1/2">
-                    <img src="path/to/your/services.jpg" alt="Penetration Testing Services" class="rounded-lg shadow-md">
+                    <i class="fas fa-shield-check icon text-green-500"></i>
+                    <h2 class="text-3xl font-semibold">Importance of Penetration Testing</h2>
+                    <p class="text-gray-600 dark:text-gray-400 mt-4">Penetration testing provides a realistic assessment of your security posture by uncovering exploitable weaknesses. It helps organizations understand their risk exposure, prioritize remediation efforts, and comply with regulatory requirements, ultimately preventing costly breaches.</p>
                 </div>
             </div>
+
+            <!-- Our Penetration Testing Services -->
+            <div class="section">
+                <h2 class="text-3xl font-semibold text-center">Our Penetration Testing Services</h2>
+                <div class="flex items-center mt-8">
+                    <div class="w-1/2">
+                        <img src="close-up-programmer-typing-keyboard_23-2149101203.jpg" alt="Penetration Testing Services" loading="lazy" class="rounded-lg shadow-md">
+                    </div>
+                    <div class="w-1/2 pl-8">
+                        <p class="text-gray-600 dark:text-gray-400">We offer a variety of penetration testing services tailored to your needs:</p>
+                        <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 mt-4">
+                            <li>Network Penetration Testing (Internal & External)</li>
+                            <li>Web Application Penetration Testing</li>
+                            <li>Mobile Application Penetration Testing</li>
+                            <li>Wireless Network Penetration Testing</li>
+                            <li>Cloud Security Penetration Testing</li>
+                            <li>Social Engineering Testing</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Our Approach -->
             <div class="section flex items-center">
                 <div class="w-1/2">
-                    <img src="path/to/your/approach.jpg" alt="Our Approach" class="rounded-lg shadow-md">
-                </div>
-                <div class="w-1/2">
-                    <i class="fas fa-cogs icon text-yellow-500"></i>
+                    <i class="fas fa-tasks icon text-yellow-500"></i>
                     <h2 class="text-3xl font-semibold">Our Approach</h2>
-                    <p class="text-gray-600 dark:text-gray-400 mt-4">Our penetration testing approach involves a comprehensive methodology that includes:</p>
-                    <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 mt-4">
-                        <li>Initial Consultation and Planning</li>
-                        <li>Reconnaissance and Information Gathering</li>
-                        <li>Vulnerability Analysis</li>
-                        <li>Exploitation and Post-Exploitation</li>
-                        <li>Reporting and Recommendations</li>
-                        <li>Remediation and Follow-Up</li>
-                    </ul>
+                    <p class="text-gray-600 dark:text-gray-400 mt-4">Our certified penetration testers follow a structured methodology, including planning, reconnaissance, scanning, exploitation, post-exploitation, and reporting. We provide detailed reports with actionable recommendations to improve your security.</p>
+                </div>
+                <div class="w-1/2">
+                    <img src="image.png" alt="Our Approach" loading="lazy" class="rounded-lg shadow-md">
                 </div>
             </div>
-            <div class="section flex items-center">
-                <div class="w-1/2">
-                    <i class="fas fa-check-circle icon text-purple-500"></i>
-                    <h2 class="text-3xl font-semibold">Benefits of Our Penetration Testing Services</h2>
-                    <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 mt-4">
-                        <li>Identify and mitigate vulnerabilities before they are exploited</li>
-                        <li>Enhance your organization's security posture</li>
-                        <li>Comply with industry regulations and standards</li>
-                        <li>Protect sensitive data and intellectual property</li>
-                        <li>Build trust with customers and partners</li>
-                    </ul>
-                </div>
-                <div class="w-1/2">
-                    <img src="path/to/your/benefits.jpg" alt="Benefits of Penetration Testing" class="rounded-lg shadow-md">
+
+            <!-- Benefits of Our Penetration Testing Services -->
+            <div class="section">
+                <h2 class="text-3xl font-semibold text-center">Benefits of Our Penetration Testing Services</h2>
+                <div class="flex items-center mt-8">
+                    <div class="w-1/2">
+                        <img src="3657405.jpg" alt="Benefits of Penetration Testing" loading="lazy" class="rounded-lg shadow-md">
+                    </div>
+                    <div class="w-1/2 pl-8">
+                        <ul class="list-disc list-inside text-gray-600 dark:text-gray-400">
+                            <li><strong>Identify Real-World Vulnerabilities:</strong> Uncover weaknesses that automated tools might miss.</li>
+                            <li><strong>Prioritize Risks:</strong> Focus on fixing the most critical security flaws.</li>
+                            <li><strong>Validate Security Controls:</strong> Test the effectiveness of your existing defenses.</li>
+                            <li><strong>Meet Compliance Requirements:</strong> Satisfy industry standards and regulations (e.g., PCI DSS, HIPAA).</li>
+                            <li><strong>Enhance Security Posture:</strong> Proactively strengthen your defenses against cyber threats.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="section flex items-center">
-                <div class="w-1/2">
-                    <img src="path/to/your/call-to-action.jpg" alt="Call to Action" class="rounded-lg shadow-md">
-                </div>
-                <div class="w-1/2">
-                    <i class="fas fa-phone-alt icon text-blue-500"></i>
-                    <h2 class="text-3xl font-semibold">Call to Action</h2>
-                    <p class="text-gray-600 dark:text-gray-400 mt-4">Ready to enhance your organization's security with our penetration testing services? Contact us today to schedule a consultation and learn more about how we can help protect your systems and data.</p>
-                    <a href="contact.html" class="bg-gradient-to-r from-blue-500 to-purple-500 text-white p-2 rounded-md hover:from-blue-600 hover:to-purple-600 inline-block mt-4">Contact Us</a>
+
+            <!-- Call to Action -->
+            <div class="section text-center">
+                <h2 class="text-3xl font-semibold">Ready to Test Your Defenses?</h2>
+                <p class="text-gray-600 dark:text-gray-400 mt-4">Ensure your organization is protected against evolving cyber threats. Contact us for a comprehensive penetration test.</p>
+                <a href="contact.html" class="bg-blue-500 text-white p-3 rounded-md hover:bg-blue-600 mt-6 inline-block">Request a Pentest</a>
+                <div class="mt-8">
+                    <img src="7903569.jpg" alt="Call to Action" loading="lazy" class="rounded-lg shadow-md inline-block">
                 </div>
             </div>
         </section>

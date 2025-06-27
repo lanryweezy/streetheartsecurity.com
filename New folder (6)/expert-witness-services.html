@@ -10,10 +10,27 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
+            line-height: 1.6; /* Consistent line height */
+        }
+        nav ul li a {
+            padding: 0.5rem 0.75rem;
+            border-radius: 0.375rem; /* rounded-md */
+            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+        nav ul li a:hover {
+            background-color: #EBF8FF; /* bg-blue-50 for light mode */
+            color: #2B6CB0; /* text-blue-700 for light mode */
+        }
+        .dark nav ul li a:hover {
+            background-color: #2D3748; /* dark:bg-gray-700 */
+            color: #63B3ED; /* dark:text-blue-300 */
         }
         .active-link {
-            border-bottom: 2px solid #3B82F6;
-            color: #3B82F6;
+            color: #2563EB; /* Tailwind's blue-600 */
+            font-weight: 600; /* semibold */
+        }
+        .dark .active-link {
+            color: #90CDF4; /* Tailwind's blue-300 */
         }
         .section {
             margin-bottom: 8rem;
@@ -45,89 +62,95 @@
         </nav>
     </header>
     <main class="container mx-auto px-4 py-8">
-        <section class="expert-witness-services space-y-16">
+        <section class="service-detail space-y-16">
             <div class="text-center section">
                 <h1 class="text-4xl font-semibold">Expert Witness Services</h1>
-                <p class="text-gray-600 dark:text-gray-400 mt-4">Protect your organization with our comprehensive expert witness services.</p>
+                <p class="text-gray-600 dark:text-gray-400 mt-4">Providing credible and authoritative testimony for cybersecurity-related legal matters.</p>
             </div>
+
+            <!-- What are Expert Witness Services? -->
             <div class="section flex items-center">
                 <div class="w-1/2">
-                    <i class="fas fa-gavel icon text-yellow-500"></i>
+                    <i class="fas fa-gavel icon text-blue-500"></i>
                     <h2 class="text-3xl font-semibold">What are Expert Witness Services?</h2>
-                    <p class="text-gray-600 dark:text-gray-400 mt-4">Expert witness services involve providing specialized knowledge and testimony in legal cases involving cybersecurity issues. Our experts leverage extensive industry experience to offer clear and compelling testimony, helping to build a strong case in court.</p>
+                    <p class="text-gray-600 dark:text-gray-400 mt-4">Expert witness services involve providing specialized knowledge and testimony in legal proceedings related to cybersecurity incidents, data breaches, digital forensics, and other technology-related disputes. Our experts can explain complex technical concepts in a clear and understandable manner.</p>
                 </div>
                 <div class="w-1/2">
-                    <img src="path/to/your/expert-witness.jpg" alt="Expert Witness Services" class="rounded-lg shadow-md">
-                </div>
-            </div>
-            <div class="section flex items-center">
-                <div class="w-1/2">
-                    <img src="path/to/your/importance.jpg" alt="Importance of Expert Witness Services" class="rounded-lg shadow-md">
-                </div>
-                <div class="w-1/2">
-                    <i class="fas fa-shield-alt icon text-blue-500"></i>
-                    <h2 class="text-3xl font-semibold">Why are Expert Witness Services Important?</h2>
-                    <p class="text-gray-600 dark:text-gray-400 mt-4">Expert witness services are crucial for providing credible and authoritative testimony in legal proceedings. They help to clarify complex technical issues, strengthen legal arguments, and ensure that justice is served. Effective expert witness services can significantly influence the outcome of a case.</p>
+                    <img src="3657405.jpg" alt="Expert Witness Services" loading="lazy" class="rounded-lg shadow-md">
                 </div>
             </div>
+
+            <!-- Importance of Expert Witness Services -->
             <div class="section flex items-center">
                 <div class="w-1/2">
-                    <i class="fas fa-list-alt icon text-green-500"></i>
-                    <h2 class="text-3xl font-semibold">Our Expert Witness Services</h2>
-                    <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 mt-4">
-                        <li>Cybersecurity Expert Testimony</li>
-                        <li>Digital Forensics Analysis</li>
-                        <li>Legal Consultation</li>
-                        <li>Report Writing and Documentation</li>
-                        <li>Courtroom Testimony</li>
-                    </ul>
+                    <img src="7903569.jpg" alt="Importance of Expert Witness Services" loading="lazy" class="rounded-lg shadow-md">
                 </div>
                 <div class="w-1/2">
-                    <img src="path/to/your/services.jpg" alt="Expert Witness Services" class="rounded-lg shadow-md">
+                    <i class="fas fa-balance-scale icon text-green-500"></i>
+                    <h2 class="text-3xl font-semibold">Importance of Expert Witness Services</h2>
+                    <p class="text-gray-600 dark:text-gray-400 mt-4">In legal cases involving complex cybersecurity issues, the clarity and credibility of an expert witness can significantly influence the outcome. Our services help legal teams build strong cases, understand technical evidence, and achieve favorable results.</p>
                 </div>
             </div>
+
+            <!-- Our Expert Witness Services -->
+            <div class="section">
+                <h2 class="text-3xl font-semibold text-center">Our Expert Witness Services</h2>
+                <div class="flex items-center mt-8">
+                    <div class="w-1/2">
+                        <img src="close-up-programmer-typing-keyboard_23-2149101203.jpg" alt="Expert Witness Services" loading="lazy" class="rounded-lg shadow-md">
+                    </div>
+                    <div class="w-1/2 pl-8">
+                        <p class="text-gray-600 dark:text-gray-400">We provide expert testimony and support for a variety of legal matters, including:</p>
+                        <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 mt-4">
+                            <li>Data Breach Litigation</li>
+                            <li>Digital Forensic Investigations</li>
+                            <li>Intellectual Property Theft</li>
+                            <li>Cybercrime Cases</li>
+                            <li>Regulatory Compliance Disputes</li>
+                            <li>Software and Technology Disputes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Our Approach -->
             <div class="section flex items-center">
                 <div class="w-1/2">
-                    <img src="path/to/your/approach.jpg" alt="Our Approach" class="rounded-lg shadow-md">
-                </div>
-                <div class="w-1/2">
-                    <i class="fas fa-cogs icon text-yellow-500"></i>
+                    <i class="fas fa-user-tie icon text-yellow-500"></i>
                     <h2 class="text-3xl font-semibold">Our Approach</h2>
-                    <p class="text-gray-600 dark:text-gray-400 mt-4">Our expert witness approach involves a comprehensive methodology that includes:</p>
-                    <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 mt-4">
-                        <li>Initial Consultation and Case Review</li>
-                        <li>Evidence Analysis and Interpretation</li>
-                        <li>Report Writing and Documentation</li>
-                        <li>Preparation for Courtroom Testimony</li>
-                        <li>Ongoing Support and Consultation</li>
-                    </ul>
+                    <p class="text-gray-600 dark:text-gray-400 mt-4">Our experts combine deep technical knowledge with extensive experience in legal settings. We conduct thorough analyses, prepare detailed reports, and deliver clear, objective, and persuasive testimony tailored to judges, juries, and legal counsel.</p>
+                </div>
+                <div class="w-1/2">
+                    <img src="image.png" alt="Our Approach" loading="lazy" class="rounded-lg shadow-md">
                 </div>
             </div>
-            <div class="section flex items-center">
-                <div class="w-1/2">
-                    <i class="fas fa-check-circle icon text-purple-500"></i>
-                    <h2 class="text-3xl font-semibold">Benefits of Our Expert Witness Services</h2>
-                    <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 mt-4">
-                        <li>Provide credible and authoritative testimony</li>
-                        <li>Clarify complex technical issues</li>
-                        <li>Strengthen legal arguments</li>
-                        <li>Ensure justice is served</li>
-                        <li>Enhance overall legal strategy</li>
-                    </ul>
-                </div>
-                <div class="w-1/2">
-                    <img src="path/to/your/benefits.jpg" alt="Benefits of Expert Witness Services" class="rounded-lg shadow-md">
+
+            <!-- Benefits of Our Expert Witness Services -->
+            <div class="section">
+                <h2 class="text-3xl font-semibold text-center">Benefits of Our Expert Witness Services</h2>
+                <div class="flex items-center mt-8">
+                    <div class="w-1/2">
+                        <img src="3657405.jpg" alt="Benefits of Expert Witness Services" loading="lazy" class="rounded-lg shadow-md">
+                    </div>
+                    <div class="w-1/2 pl-8">
+                        <ul class="list-disc list-inside text-gray-600 dark:text-gray-400">
+                            <li><strong>Credible Testimony:</strong> Experienced professionals with proven track records.</li>
+                            <li><strong>Clear Communication:</strong> Simplify complex technical details for non-technical audiences.</li>
+                            <li><strong>Thorough Analysis:</strong> In-depth investigation and evidence-based opinions.</li>
+                            <li><strong>Case Support:</strong> Assist legal teams in understanding and presenting technical evidence.</li>
+                            <li><strong>Objective Expertise:</strong> Unbiased assessments to support fair legal outcomes.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="section flex items-center">
-                <div class="w-1/2">
-                    <img src="path/to/your/call-to-action.jpg" alt="Call to Action" class="rounded-lg shadow-md">
-                </div>
-                <div class="w-1/2">
-                    <i class="fas fa-phone-alt icon text-blue-500"></i>
-                    <h2 class="text-3xl font-semibold">Call to Action</h2>
-                    <p class="text-gray-600 dark:text-gray-400 mt-4">Ready to enhance your legal strategy with our expert witness services? Contact us today to schedule a consultation and learn more about how we can support your case.</p>
-                    <a href="contact.html" class="bg-gradient-to-r from-blue-500 to-purple-500 text-white p-2 rounded-md hover:from-blue-600 hover:to-purple-600 inline-block mt-4">Contact Us</a>
+
+            <!-- Call to Action -->
+            <div class="section text-center">
+                <h2 class="text-3xl font-semibold">Require Cybersecurity Expert Witness?</h2>
+                <p class="text-gray-600 dark:text-gray-400 mt-4">If you need an experienced and credible cybersecurity expert for your legal case, contact us for a confidential consultation.</p>
+                <a href="contact.html" class="bg-blue-500 text-white p-3 rounded-md hover:bg-blue-600 mt-6 inline-block">Contact Us</a>
+                <div class="mt-8">
+                    <img src="7903569.jpg" alt="Call to Action" loading="lazy" class="rounded-lg shadow-md inline-block">
                 </div>
             </div>
         </section>

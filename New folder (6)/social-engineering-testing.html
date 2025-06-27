@@ -10,10 +10,27 @@
     <style>
         body {
             font-family: 'Inter', sans-serif;
+            line-height: 1.6; /* Consistent line height */
+        }
+        nav ul li a {
+            padding: 0.5rem 0.75rem;
+            border-radius: 0.375rem; /* rounded-md */
+            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+        nav ul li a:hover {
+            background-color: #EBF8FF; /* bg-blue-50 for light mode */
+            color: #2B6CB0; /* text-blue-700 for light mode */
+        }
+        .dark nav ul li a:hover {
+            background-color: #2D3748; /* dark:bg-gray-700 */
+            color: #63B3ED; /* dark:text-blue-300 */
         }
         .active-link {
-            border-bottom: 2px solid #3B82F6;
-            color: #3B82F6;
+            color: #2563EB; /* Tailwind's blue-600 */
+            font-weight: 600; /* semibold */
+        }
+        .dark .active-link {
+            color: #90CDF4; /* Tailwind's blue-300 */
         }
         .section {
             margin-bottom: 8rem;
@@ -45,91 +62,95 @@
         </nav>
     </header>
     <main class="container mx-auto px-4 py-8">
-        <section class="social-engineering-testing space-y-16">
+        <section class="service-detail space-y-16">
             <div class="text-center section">
                 <h1 class="text-4xl font-semibold">Social Engineering Testing</h1>
-                <p class="text-gray-600 dark:text-gray-400 mt-4">Protect your organization with our comprehensive social engineering testing services.</p>
+                <p class="text-gray-600 dark:text-gray-400 mt-4">Assessing your organization's susceptibility to human-based manipulation tactics.</p>
             </div>
+
+            <!-- What is Social Engineering Testing? -->
             <div class="section flex items-center">
                 <div class="w-1/2">
-                    <i class="fas fa-user-secret icon text-orange-500"></i>
+                    <i class="fas fa-theater-masks icon text-blue-500"></i>
                     <h2 class="text-3xl font-semibold">What is Social Engineering Testing?</h2>
-                    <p class="text-gray-600 dark:text-gray-400 mt-4">Social engineering testing involves assessing an organization's susceptibility to manipulation by attempting to exploit human factors, such as through phishing or impersonation tactics. This process helps identify vulnerabilities in human behavior and security protocols, ensuring that organizations are prepared to defend against social engineering attacks.</p>
+                    <p class="text-gray-600 dark:text-gray-400 mt-4">Social engineering testing involves simulating attacks that exploit human psychology rather than technical vulnerabilities. These tests assess how well employees can identify and resist tactics like phishing, pretexting, baiting, and tailgating.</p>
                 </div>
                 <div class="w-1/2">
-                    <img src="path/to/your/social-engineering-testing.jpg" alt="Social Engineering Testing" class="rounded-lg shadow-md">
-                </div>
-            </div>
-            <div class="section flex items-center">
-                <div class="w-1/2">
-                    <img src="path/to/your/importance.jpg" alt="Importance of Social Engineering Testing" class="rounded-lg shadow-md">
-                </div>
-                <div class="w-1/2">
-                    <i class="fas fa-shield-alt icon text-blue-500"></i>
-                    <h2 class="text-3xl font-semibold">Why is Social Engineering Testing Important?</h2>
-                    <p class="text-gray-600 dark:text-gray-400 mt-4">Social engineering testing is crucial for identifying and addressing vulnerabilities in human behavior and security protocols. By assessing susceptibility to manipulation, organizations can proactively identify weaknesses, enhance their security posture, and ensure that they are prepared to defend against social engineering attacks.</p>
+                    <img src="3657405.jpg" alt="Social Engineering Testing" loading="lazy" class="rounded-lg shadow-md">
                 </div>
             </div>
+
+            <!-- Importance of Social Engineering Testing -->
             <div class="section flex items-center">
                 <div class="w-1/2">
-                    <i class="fas fa-list-alt icon text-green-500"></i>
-                    <h2 class="text-3xl font-semibold">Our Social Engineering Testing Services</h2>
-                    <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 mt-4">
-                        <li>Phishing Simulations</li>
-                        <li>Impersonation Attacks</li>
-                        <li>Pretexting</li>
-                        <li>Baiting</li>
-                        <li>Quid Pro Quo Attacks</li>
-                        <li>Continuous Monitoring and Training</li>
-                    </ul>
+                    <img src="7903569.jpg" alt="Importance of Social Engineering Testing" loading="lazy" class="rounded-lg shadow-md">
                 </div>
                 <div class="w-1/2">
-                    <img src="path/to/your/services.jpg" alt="Social Engineering Testing Services" class="rounded-lg shadow-md">
+                    <i class="fas fa-user-shield icon text-green-500"></i>
+                    <h2 class="text-3xl font-semibold">Importance of Social Engineering Testing</h2>
+                    <p class="text-gray-600 dark:text-gray-400 mt-4">Attackers often target the human element as it can be the weakest link in an organization's security. Social engineering tests reveal how vulnerable your employees are to manipulation, providing valuable insights for targeted training and awareness programs.</p>
                 </div>
             </div>
+
+            <!-- Our Social Engineering Testing Services -->
+            <div class="section">
+                <h2 class="text-3xl font-semibold text-center">Our Social Engineering Testing Services</h2>
+                <div class="flex items-center mt-8">
+                    <div class="w-1/2">
+                        <img src="close-up-programmer-typing-keyboard_23-2149101203.jpg" alt="Social Engineering Testing Services" loading="lazy" class="rounded-lg shadow-md">
+                    </div>
+                    <div class="w-1/2 pl-8">
+                        <p class="text-gray-600 dark:text-gray-400">We conduct various types of social engineering tests, including:</p>
+                        <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 mt-4">
+                            <li>Phishing Campaigns (Email, SMS, Voice)</li>
+                            <li>Pretexting (Creating and using an invented scenario)</li>
+                            <li>Baiting (Luring users with a false promise)</li>
+                            <li>Physical Security Assessments (e.g., Tailgating, Dumpster Diving)</li>
+                            <li>USB Drop Testing</li>
+                            <li>Impersonation Attempts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Our Approach -->
             <div class="section flex items-center">
                 <div class="w-1/2">
-                    <img src="path/to/your/approach.jpg" alt="Our Approach" class="rounded-lg shadow-md">
-                </div>
-                <div class="w-1/2">
-                    <i class="fas fa-cogs icon text-yellow-500"></i>
+                    <i class="fas fa-bullseye-pointer icon text-yellow-500"></i>
                     <h2 class="text-3xl font-semibold">Our Approach</h2>
-                    <p class="text-gray-600 dark:text-gray-400 mt-4">Our social engineering testing approach involves a comprehensive methodology that includes:</p>
-                    <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 mt-4">
-                        <li>Initial Consultation and Planning</li>
-                        <li>Reconnaissance and Information Gathering</li>
-                        <li>Attack Simulation and Execution</li>
-                        <li>Analysis and Reporting</li>
-                        <li>Remediation Recommendations</li>
-                        <li>Continuous Improvement</li>
-                    </ul>
+                    <p class="text-gray-600 dark:text-gray-400 mt-4">Our tests are carefully planned and executed to simulate realistic attack scenarios without causing actual harm or disruption. We provide detailed reports on success rates, employee responses, and recommendations for improving security awareness and resilience.</p>
+                </div>
+                <div class="w-1/2">
+                    <img src="image.png" alt="Our Approach" loading="lazy" class="rounded-lg shadow-md">
                 </div>
             </div>
-            <div class="section flex items-center">
-                <div class="w-1/2">
-                    <i class="fas fa-check-circle icon text-purple-500"></i>
-                    <h2 class="text-3xl font-semibold">Benefits of Our Social Engineering Testing</h2>
-                    <ul class="list-disc list-inside text-gray-600 dark:text-gray-400 mt-4">
-                        <li>Identify and mitigate vulnerabilities in human behavior</li>
-                        <li>Enhance overall security posture</li>
-                        <li>Protect sensitive data and intellectual property</li>
-                        <li>Build trust with customers and partners</li>
-                        <li>Ensure compliance with regulatory requirements</li>
-                    </ul>
-                </div>
-                <div class="w-1/2">
-                    <img src="path/to/your/benefits.jpg" alt="Benefits of Social Engineering Testing" class="rounded-lg shadow-md">
+
+            <!-- Benefits of Our Social Engineering Testing -->
+            <div class="section">
+                <h2 class="text-3xl font-semibold text-center">Benefits of Our Social Engineering Testing</h2>
+                <div class="flex items-center mt-8">
+                    <div class="w-1/2">
+                        <img src="3657405.jpg" alt="Benefits of Social Engineering Testing" loading="lazy" class="rounded-lg shadow-md">
+                    </div>
+                    <div class="w-1/2 pl-8">
+                        <ul class="list-disc list-inside text-gray-600 dark:text-gray-400">
+                            <li><strong>Identify Human Vulnerabilities:</strong> Understand how susceptible your employees are to manipulation.</li>
+                            <li><strong>Measure Training Effectiveness:</strong> Assess the impact of your current security awareness programs.</li>
+                            <li><strong>Targeted Training:</strong> Develop focused training based on test results.</li>
+                            <li><strong>Enhance Incident Detection:</strong> Improve employees' ability to recognize and report social engineering attempts.</li>
+                            <li><strong>Strengthen Overall Security:</strong> Reduce the likelihood of successful human-targeted attacks.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="section flex items-center">
-                <div class="w-1/2">
-                    <img src="path/to/your/call-to-action.jpg" alt="Call to Action" class="rounded-lg shadow-md">
-                </div>
-                <div class="w-1/2">
-                    <i class="fas fa-phone-alt icon text-blue-500"></i>
-                    <h2 class="text-3xl font-semibold">Call to Action</h2>
-                    <p class="text-gray-600 dark:text-gray-400 mt-4">Ready to enhance your organization's security with our social engineering testing services? Contact us today to schedule a consultation and learn more about how we can help protect your systems and data.</p>
-                    <a href="contact.html" class="bg-gradient-to-r from-blue-500 to-purple-500 text-white p-2 rounded-md hover:from-blue-600 hover:to-purple-600 inline-block mt-4">Contact Us</a>
+
+            <!-- Call to Action -->
+            <div class="section text-center">
+                <h2 class="text-3xl font-semibold">Test Your Human Defenses</h2>
+                <p class="text-gray-600 dark:text-gray-400 mt-4">Discover how resilient your organization is against social engineering tactics. Contact us for a tailored testing program.</p>
+                <a href="contact.html" class="bg-blue-500 text-white p-3 rounded-md hover:bg-blue-600 mt-6 inline-block">Schedule a Test</a>
+                <div class="mt-8">
+                    <img src="7903569.jpg" alt="Call to Action" loading="lazy" class="rounded-lg shadow-md inline-block">
                 </div>
             </div>
         </section>
