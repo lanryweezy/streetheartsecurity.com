@@ -70,7 +70,7 @@
 
             <!-- What is Penetration Testing? -->
             <div class="section flex items-center">
-                <div class="w-1/2">
+                <div class="w-1/2 pr-8"> {/* Added pr-8 */}
                     <i class="fas fa-user-secret icon text-blue-500"></i>
                     <h2 class="text-3xl font-semibold">What is Penetration Testing?</h2>
                     <p class="text-gray-600 dark:text-gray-400 mt-4">Penetration testing, often called ethical hacking, is an authorized simulated cyberattack on a computer system, network, or web application to evaluate its security. Testers use the same tools and techniques as malicious attackers to identify and exploit vulnerabilities.</p>
@@ -85,7 +85,7 @@
                 <div class="w-1/2">
                     <img src="7903569.jpg" alt="Importance of Penetration Testing" loading="lazy" class="rounded-lg shadow-md">
                 </div>
-                <div class="w-1/2">
+                <div class="w-1/2 pl-8"> {/* Added pl-8 */}
                     <i class="fas fa-shield-check icon text-green-500"></i>
                     <h2 class="text-3xl font-semibold">Importance of Penetration Testing</h2>
                     <p class="text-gray-600 dark:text-gray-400 mt-4">Penetration testing provides a realistic assessment of your security posture by uncovering exploitable weaknesses. It helps organizations understand their risk exposure, prioritize remediation efforts, and comply with regulatory requirements, ultimately preventing costly breaches.</p>
@@ -115,7 +115,7 @@
 
             <!-- Our Approach -->
             <div class="section flex items-center">
-                <div class="w-1/2">
+                <div class="w-1/2 pr-8"> {/* Added pr-8 */}
                     <i class="fas fa-tasks icon text-yellow-500"></i>
                     <h2 class="text-3xl font-semibold">Our Approach</h2>
                     <p class="text-gray-600 dark:text-gray-400 mt-4">Our certified penetration testers follow a structured methodology, including planning, reconnaissance, scanning, exploitation, post-exploitation, and reporting. We provide detailed reports with actionable recommendations to improve your security.</p>
@@ -148,16 +148,65 @@
             <div class="section text-center">
                 <h2 class="text-3xl font-semibold">Ready to Test Your Defenses?</h2>
                 <p class="text-gray-600 dark:text-gray-400 mt-4">Ensure your organization is protected against evolving cyber threats. Contact us for a comprehensive penetration test.</p>
-                <a href="contact.html" class="bg-blue-500 text-white p-3 rounded-md hover:bg-blue-600 mt-6 inline-block">Request a Pentest</a>
+                <a href="contact.html" class="bg-blue-500 text-white py-3 px-6 rounded-md hover:bg-blue-600 text-lg font-semibold mt-6 inline-block">Request a Pentest</a>
                 <div class="mt-8">
                     <img src="7903569.jpg" alt="Call to Action" loading="lazy" class="rounded-lg shadow-md inline-block">
                 </div>
             </div>
         </section>
     </main>
-    <footer class="bg-gray-800 text-white text-center py-4">
+<footer class="bg-gray-800 text-gray-300 py-12 px-4">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Column 1: Logo & Brief -->
+        <div class="mb-6 md:mb-0">
+            <div class="flex items-center mb-3">
+                <img src="image.png" alt="Street Heart Security Logo" class="h-10 mr-3" loading="lazy">
+                <span class="text-xl font-bold text-white">Street Heart Security</span>
+            </div>
+            <p class="text-sm mt-2">Your trusted partner in navigating the complexities of cybersecurity. We provide innovative solutions to protect your digital assets.</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="mb-6 md:mb-0">
+            <h5 class="text-lg font-semibold text-white mb-4">Quick Links</h5>
+            <ul class="space-y-2">
+                <li><a href="index.html" class="hover:text-white transition-colors">Home</a></li>
+                <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+                <li><a href="services.html" class="hover:text-white transition-colors">Services</a></li>
+                <li><a href="blog.html" class="hover:text-white transition-colors">Blog</a></li>
+                <li><a href="career.html" class="hover:text-white transition-colors">Career</a></li>
+                <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Our Services -->
+        <div class="mb-6 md:mb-0">
+            <h5 class="text-lg font-semibold text-white mb-4">Our Services</h5>
+            <ul class="space-y-2">
+                <li><a href="penetration-testing.html" class="hover:text-white transition-colors">Penetration Testing</a></li>
+                <li><a href="incident-response.html" class="hover:text-white transition-colors">Incident Response</a></li>
+                <li><a href="vulnerability-assessment.html" class="hover:text-white transition-colors">Vulnerability Assessment</a></li>
+                <li><a href="services.html" class="hover:text-white transition-colors">More Services...</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 4: Connect With Us -->
+        <div>
+            <h5 class="text-lg font-semibold text-white mb-4">Connect With Us</h5>
+            <div class="flex space-x-4 mb-4">
+                <a href="#" aria-label="Facebook" class="text-gray-300 hover:text-white transition-colors"><i class="fab fa-facebook-f fa-lg"></i></a>
+                <a href="#" aria-label="Twitter" class="text-gray-300 hover:text-white transition-colors"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="#" aria-label="LinkedIn" class="text-gray-300 hover:text-white transition-colors"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                <a href="#" aria-label="Instagram" class="text-gray-300 hover:text-white transition-colors"><i class="fab fa-instagram fa-lg"></i></a>
+            </div>
+            <p class="text-sm">Email: <a href="mailto:info@streetheartsecurity.com" class="hover:text-white transition-colors">info@streetheartsecurity.com</a></p>
+            <!-- <p class="text-sm">Phone: +1 (123) 456-7890</p> -->
+        </div>
+    </div>
+    <div class="mt-10 pt-8 border-t border-gray-700 text-center text-sm">
         <p>&copy; 2024 Street Heart Security. All rights reserved.</p>
-    </footer>
+    </div>
+</footer>
     <script>
         document.getElementById('darkModeToggle').addEventListener('click', function() {
             document.documentElement.classList.toggle('dark');
